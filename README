@@ -1,0 +1,45 @@
++++++++++++++++++++
+Folder Hierarchy
++++++++++++++++++++
+*.py				- all python files
+run.sh				- running script
+data/				- Folder named 'data'
+ - train/			- Folder named 'train' under 'data'
+     -chunks/			- Folder named 'chunks' under 'train'
+     -partitions/		- Folder named 'partitions' under 'train'
+     -train.csv  		- training file from Kaggle
+ - test/			- Folder named 'test' under 'data'
+     -chunks/			- Folder named 'chunks' under 'test'
+     -partitions/		- Folder named 'partitions' under 'test'
+     -test.csv  		- testing file from Kaggle
+
+
++++++++++++++++++++
+ Code 
++++++++++++++++++++
+rain_preprocess.py     - Creates chunks and partitions for feature generation
+rain_features.py       - Creates statistical, domain based features from partitions
+rain_train.py	       - Trains the model, Predicts the output
+main.py		       - calls exposed functions in above python files
+run.sh		       - shell script to run the whole pipeline
+
+
++++++++++++++++++++
+ Packages needed
++++++++++++++++++++
+Python 2.6
+SciKit 
+Pickle
+NumPy
+Pandas
+xgboost
+
++++++++++++++++++++
+ Instructions 
++++++++++++++++++++
+1) Create all the required folders in the mentioned hierarchial format
+2) Place your train.csv and test.csv in appropriate folders
+3) Run run.sh from the folder where it resides
+
+
+
